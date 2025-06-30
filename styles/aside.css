@@ -1,0 +1,108 @@
+/* styles/aside.css */
+.aside-nav {
+  width: 250px;
+  background: var(--dark);
+  color: white;
+  padding: 1.5rem;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.aside-nav h2 {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+.aside-nav h2:hover {
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-item input {
+  display: none;
+}
+
+.nav-item label {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-item label:hover {
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.nav-item input:checked + label {
+  background: rgba(52, 152, 219, 0.3);
+  color: var(--primary);
+}
+
+/* Estilos para el menú colapsado */
+.aside-nav.collapsed {
+  width: 60px;
+  padding: 1rem 0.5rem;
+}
+
+.aside-nav.collapsed h2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0 auto;
+  padding: 1rem 0;
+  white-space: nowrap;
+}
+
+.aside-nav.collapsed .nav-menu {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Ícono de hamburguesa para móviles */
+.aside-nav .menu-toggle {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .aside-nav {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .aside-nav.collapsed {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  .aside-nav.collapsed h2 {
+    writing-mode: horizontal-tb;
+    padding: 0.5rem 1rem;
+    margin-left: 2.5rem;
+  }
+  
+  .aside-nav .menu-toggle {
+    display: block;
+  }
+}

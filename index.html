@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Contenidos</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/aside.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="aside-nav">
+      <h2>Menú</h2>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <input type="radio" id="inicio-check" name="nav-menu" checked>
+          <label for="inicio-check">Inicio</label>
+        </li>
+        <li class="nav-item">
+          <input type="radio" id="historias-check" name="nav-menu">
+          <label for="historias-check">Historias</label>
+        </li>
+        <li class="nav-item">
+          <input type="radio" id="trabajos-check" name="nav-menu">
+          <label for="trabajos-check">Trabajos</label>
+        </li>
+        <li class="nav-item">
+          <input type="radio" id="reflexiones-check" name="nav-menu">
+          <label for="reflexiones-check">Reflexiones</label>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="main-content" id="content">
+      <!-- Contenido dinámico -->
+    </main>
+  </div>
+
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

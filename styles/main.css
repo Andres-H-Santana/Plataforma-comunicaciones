@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+  --primary: #3498db;
+  --dark: #2c3e50;
+  --accent: #f39c12;
+  --light: #ecf0f1;
+  --text: #34495e;
+  --gray: #7f8c8d;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+  background: var(--light);
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid transparent;
+}
+
+.card.highlight {
+  border-left-color: var(--accent);
+  background: #fffaf0;
+}
+
+.card-content {
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Buttons */
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+.full-content-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content-body {
+  flex: 1;
+}
+
+.btn-back {
+  align-self: flex-end;
+  margin-top: 2rem;
+  background: var(--gray);
+}
+
+.btn-back:hover {
+  background: #6c757d;
+}
+
+.aside-nav.collapsed {
+  width: 60px;
+  overflow: hidden;
+}
+
+.aside-nav.collapsed h2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.aside-nav.collapsed .nav-menu {
+  display: none;
+}
