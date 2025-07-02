@@ -1,7 +1,100 @@
 export const dataEstrella = {
+    historias: [
+        {
+            id: 1,
+            titulo: "La Sapa Caramelo",
+            contenido: "Había una vez una pequeña sapa llamada Caramelo, que vivía en un rincón húmedo del bosque, donde el sol apenas entraba. Un día, al despertar, notó que tenía un moco verde colgando de su nariz. Se lo limpió con una hoja, algo avergonzada, y siguió su camino.\n\nMientras saltaba por el bosque, tropezó con una vieja estaca clavada en el suelo. Era extraña, pues parecía hecha de un material que no era madera ni piedra. La sapa, curiosa, trató de moverla, pero estaba atada con un nudo muy apretado. Dio algunos tirones hasta que, finalmente, el nudo se deshizo, revelando una pequeña caja enterrada.\n\nCaramelo abrió la tapa con cuidado y encontró dentro un cristal brillante que emitía un leve zumbido. No sabía qué era, pero al tocarlo, una energía cálida le recorrió todo el cuerpo. En su corazón creció una chispa de esperanza que no había sentido antes.\n\nDesde ese día, la sapa Caramelo comprendió que las cosas más mágicas ocurren cuando uno se atreve a descubrir lo que hay debajo de la superficie, incluso si empieza con un moco.",
+            autor: "Estrella",
+            fecha: "2025",
+            destacado: true,
+            tags: ["fantasía", "bosque", "magia", "superación"]
+        }
+    ],
+
     trabajos: [
         {
             id: 105,
+            titulo: "LA KINESIS: ANÁLISIS DEL LENGUAJE CORPORAL",
+            descripcion: "Estudio sobre la comunicación no verbal a través de movimientos corporales y su aplicación práctica",
+            equipo: "Nicole Ospina, Juan José Hernandez, Camila Ceballos",
+            año: "2025",
+            contenido: `<div class="introduccion">
+                <h3>Introducción</h3>
+                <p>La comunicación humana no se limita únicamente a las palabras. De hecho, una gran parte de la información que transmitimos proviene de gestos, expresiones faciales, posturas y movimientos corporales. Este tipo de comunicación, conocida como comunicación no verbal, desempeña un papel crucial en las interacciones sociales. Dentro de este campo, la kinesis se enfoca en el análisis de los movimientos corporales que reflejan los estados emocionales y psicológicos de los individuos. Entender la kinesis permite mejorar la percepción social, detectar mentiras, y optimizar procesos de selección de personal, ventas o relaciones interpersonales.</p>
+            </div>
+
+            <div class="definicion">
+                <h3>¿Qué es la Kinesis?</h3>
+                <p>La kinesis es el estudio de los movimientos corporales producto de pensamientos conscientes e inconscientes que comunican un mensaje emocional. Estos movimientos pueden reforzar o contradecir lo que se expresa verbalmente. En otras palabras, la kinesis analiza cómo el cuerpo expresa lo que muchas veces la boca no dice. Se enfoca en aspectos como el contacto visual, los gestos, la postura, el tono de voz y otros signos fisiológicos.</p>
+            </div>
+
+            <div class="utilidad">
+                <h3>¿Para qué sirve la Kinesis?</h3>
+                <p>La utilidad de la kinesis se extiende a diversos ámbitos sociales y profesionales:</p>
+                <ul>
+                    <li><strong>Selección de personal:</strong> permite evaluar la honestidad y confiabilidad de los candidatos mediante la observación de su lenguaje corporal.</li>
+                    <li><strong>Ventas:</strong> ayuda a interpretar las verdaderas necesidades e intenciones de los clientes, facilitando negociaciones efectivas.</li>
+                    <li><strong>Ámbito clínico:</strong> ofrece herramientas para analizar el discurso verbal y corporal de un paciente, mejorando el diagnóstico emocional.</li>
+                    <li><strong>Vida personal:</strong> sirve para detectar si una persona está diciendo la verdad o si oculta algo.</li>
+                </ul>
+                <p>En general, la kinesis es una herramienta poderosa para comprender el comportamiento humano desde una perspectiva emocional y subconsciente.</p>
+            </div>
+
+            <div class="caracteristicas">
+                <h3>Características de la Kinesis</h3>
+                <ul>
+                    <li><strong>Lenguaje no verbal (55% de la comunicación):</strong> incluye el contacto visual, gestos, postura, movimiento corporal, distancia interpersonal, forma de caminar y contacto físico.</li>
+                    <li><strong>Lo que se dice (7%) y cómo se dice (38%):</strong> el tono de voz, intensidad, modulación y pronunciación también reflejan emociones.</li>
+                    <li><strong>Detección del engaño:</strong> ciertos signos físicos como el aumento del ritmo cardíaco, presión arterial, sudoración, rubor, o movimientos en la nariz y boca, pueden revelar intentos de ocultar información.</li>
+                </ul>
+                <p>Un aspecto central del análisis kinésico es la línea base, es decir, el comportamiento normal de una persona. Cualquier desviación significativa en esta línea puede indicar una respuesta emocional ante una amenaza o mentira.</p>
+                <blockquote>"El cuerpo siempre habla; incluso cuando creemos que lo tenemos bajo control, nuestras emociones buscan salir a través de microexpresiones o gestos sutiles" (Navarro, 2015).</blockquote>
+            </div>
+
+            <div class="analisis-pelicula">
+                <h3>Escena de la Película "EL COLOR DEL PARAÍSO"</h3>
+                <h4>Análisis de kinesis de la escena final (Hashem, el padre)</h4>
+
+                <div class="escena">
+                    <h5>Durante el viaje</h5>
+                    <p>Antes de llegar al puente, la postura del padre a caballo es la de un hombre completamente triste. Su espalda está encorvada, no por el cansancio del cuerpo, sino por la culpa y tristeza de la muerte de su madre, un evento en el que actuó indirectamente. Ya no es tan rígido y desafiante como se mostró durante toda la película, ahora se le ve decaído y débil. Su mirada está perdida, no mira el camino ni a su hijo, tiene una mirada vacía.</p>
+                </div>
+
+                <div class="escena">
+                    <h5>Cuando el puente se derrumba</h5>
+                    <p>Cuando el puente de madera se rompe y Mohammad es arrastrado por la corriente, la reacción del padre es clave para analizar sus kinesis. Su primera reacción no es hacer algo, sino que se queda quieto, su cuerpo parece congelado. Esta parálisis es la muestra del congelamiento emocional que ha tenido toda la película. Ha estado emocionalmente y sentimentalmente congelado, incapaz de amar o actuar por amor a su familia.</p>
+                    <p>Su cara y expresión muestra su miedo e impresión silenciosa, teniendo los ojos muy abiertos, viendo a su hijo ser llevado por el río, viendo en lo que acabaron todas sus decisiones con Mohammed. Su boca medio abierta no es capaz de gritar, está en total estado de shock.</p>
+                </div>
+
+                <div class="escena">
+                    <h5>La reacción</h5>
+                    <p>Hashem por fin reacciona, no por razón, sino por impulso, empieza a correr desesperado. Es la primera escena donde se ve a Hashem actuando con instinto paternal, por fin actúa sin reprimir su corazón.</p>
+                </div>
+
+                <div class="escena">
+                    <h5>A la orilla del agua</h5>
+                    <p>Cuando ya llegan a la orilla y encuentra el cuerpo de Mohammad que parecía muerto, su lenguaje corporal se nota con dolor y amor arrepentido. Por primera vez en todas las escenas, su padre lo abraza por cuenta propia. Se tumba sobre Mohammed, abrazándolo desesperadamente. Se ve un contacto físico que no es común, ya no lo empuja o lo desprecia, lo abraza a manera de protegerlo, de arrepentirse. Al final, levanta mirada hacia el cielo, no se le nota enojado, sino como rogando y arrepintiéndose. Ya no se nota su orgullo común, se encuentra arrodillado, suplicándole a un Dios.</p>
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h3>Conclusión</h3>
+                <p>La kinesis es una poderosa herramienta de interpretación social que permite acceder al mundo interno de las personas a través de su comportamiento corporal. Ya sea en contextos laborales, clínicos o personales, el conocimiento de la comunicación no verbal contribuye a construir interacciones más honestas y empáticas. En un entorno donde las palabras pueden mentir, el cuerpo se convierte en el principal portavoz de la verdad.</p>
+            </div>
+
+            <div class="bibliografia">
+                <h3>Bibliografía y Cibergrafía</h3>
+                <ul>
+                    <li>Navarro, J. (2015). What Every Body is Saying: An Ex-FBI Agent's Guide to Speed-Reading People. Harper Collins.</li>
+                    <li>Mehrabian, A. (1971). Silent Messages. Wadsworth Publishing Company.</li>
+                    <li>Comunicación no verbal y lenguaje corporal. (s.f.). Recuperado de: https://psicologiaymente.com/social/comunicacion-no-verbal</li>
+                    <li>ANDIRA. (2015, agosto 31). Kinesis, el lenguaje no verbal y la mentira. Asociación Nacional de Investigadores en Ciencias Jurídico-Forenses A.C. https://www.andira.org.mx/2015/08/31/kinesis-el-lenguaje-no-verbal-y-la-mentira-2/</li>
+                </ul>
+            </div>`,
+            tags: ["kinesis", "comunicación no verbal", "lenguaje corporal", "análisis fílmico", "psicología"]
+        },
+        {
+            id: 106,
             titulo: "TALLER DE COMUNICACIÓN ASERTIVA",
             descripcion: "IDENTIFICACIÓN DE LOS TIPOS DE COMUNICACIÓN EN LA COMUNICACIÓN ASERTIVA",
             equipo: "Lucianno Romero, Nicole Ospina",
@@ -87,7 +180,7 @@ export const dataEstrella = {
             tags: ["comunicación", "asertividad", "habilidades sociales", "educación"]
         },
         {
-            id: 106,
+            id: 107,
             titulo: "FUNCIÓN DEL LENGUAJE EMOTIVA",
             descripcion: "ANÁLISIS DE LA FUNCIÓN EMOTIVA DEL LENGUAJE Y SUS CARACTERÍSTICAS",
             equipo: "Camila Ceballos, Juan José Hernández, Nicole Ospina",
@@ -143,5 +236,15 @@ export const dataEstrella = {
                 </div>`,
             tags: ["lenguaje", "función emotiva", "comunicación", "educación"]
         }
+    ],
+    reflexiones: [
+        {
+            id: 202,
+            titulo: "El poder de la comunicación asertiva",
+            contenido: "La comunicación asertiva es la clave para expresar lo que sentimos y pensamos sin herir ni callarnos. Es el equilibrio entre hablar con respeto y defender lo que somos. Cuando somos asertivos, construimos relaciones más sanas y auténticas, porque aprendemos a escucharnos y a escuchar a los demás desde la empatía.",
+            autor: "Estrella",
+            fecha: "2025",
+            tags: ["comunicación", "relaciones", "empatía", "crecimiento personal"]
+        }
     ]
-};
+}

@@ -1,26 +1,40 @@
 export const dataDaniel = {
     trabajos: [
         {
-            id: 104,
+            id: 103,
             titulo: "LA FUNCIÓN METALINGÜÍSTICA",
-            descripcion: "El lenguaje para hablar sobre el propio lenguaje. Por ejemplo, cuando definimos una palabra, explicamos una regla gramatical o corregimos cómo se dice algo",
+            descripcion: "Es cuando usamos el lenguaje para hablar sobre el propio lenguaje. Por ejemplo, cuando definimos una palabra, explicamos una regla gramatical o corregimos cómo se dice algo.",
             equipo: "Juan Daniel Agudelo, Andrés Felipe Hurtado, Lhucianno Romero",
             año: "2025",
-            contenido: `¿PARA QUE SIRVE?
-            La usamos para:
-            Enseñar o
-            aprender un
-            idioma
-            Corregir errores
-            Aclarar
-            significados
-            Hablar sobre
-            normas del lenguaje`,
-            ejemplos: `¿Qué significa Ética?`,
+            contenido: `<div class="pregunta-respuesta">
+                    <p class="pregunta"><strong>¿Para qué sirve?</strong></p>
+                    <p class="respuesta">
+                        La usamos para hablar sobre el lenguaje mismo. Es útil cuando queremos definir palabras, corregir errores lingüísticos o explicar reglas gramaticales. Esta función permite:
+                    </p>
+                    <div class="respuesta">
+                        <ul class="lista-caracteristicas">
+                            <li>Enseñar o aprender un idioma</li>
+                            <li>Corregir errores</li>
+                            <li>Aclarar significados</li>
+                            <li>Hablar sobre normas del lenguaje</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pregunta-respuesta">
+                    <p class="pregunta"><strong>Ejemplos</strong></p>
+                    <div class="respuesta">
+                        <ul class="lista-caracteristicas">
+                            <li>‘Perro’ es un sustantivo.</li>
+                            <li>“El plural de lápiz es lápices.”</li>
+                            <li>¿Qué significa ‘Ética’?</li>
+                            <li>El verbo ‘Comer’ está en infinitivo.</li>
+                        </ul>
+                    </div>
+                </div>`,
             tags: ["lingüística", "gramática", "educación", "comunicación"]
         },
         {
-            id: 103,
+            id: 104,
             titulo: "TALLER DE COMUNICACIÓN ASERTIVA",
             descripcion: "IDENTIFICAR LOS TIPOS DE COMUNICACIÓN EN LA COMUNICACIÓN ASERTIVA",
             equipo: "Juan José Hernández, Juan Daniel Agudelo",

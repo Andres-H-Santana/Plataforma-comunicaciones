@@ -1,29 +1,39 @@
-/* styles/aside.css */
 .aside-nav {
-  width: 250px;
+  width: 280px;
   background: var(--dark);
   color: white;
   padding: 1.5rem;
-  transition: width 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
+  z-index: 10;
 }
 
 .aside-nav h2 {
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   transition: all 0.3s;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 .aside-nav h2:hover {
   background: rgba(52, 152, 219, 0.2);
 }
 
+.aside-nav h2::before {
+  content: "≡";
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
 .nav-menu {
   list-style: none;
   padding: 0;
-  transition: opacity 0.3s ease;
+  margin: 0;
+  transition: all 0.3s ease;
 }
 
 .nav-item {
@@ -36,10 +46,11 @@
 
 .nav-item label {
   display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
+  font-size: 1rem;
 }
 
 .nav-item label:hover {
@@ -49,12 +60,14 @@
 .nav-item input:checked + label {
   background: rgba(52, 152, 219, 0.3);
   color: var(--primary);
+  font-weight: 500;
 }
 
-/* Estilos para el menú colapsado */
+/* Menú colapsado */
 .aside-nav.collapsed {
-  width: 60px;
+  width: 70px;
   padding: 1rem 0.5rem;
+  
 }
 
 .aside-nav.collapsed h2 {
@@ -63,6 +76,11 @@
   margin: 0 auto;
   padding: 1rem 0;
   white-space: nowrap;
+  height: 120px;
+}
+
+.aside-nav.collapsed h2::before {
+  display: none;
 }
 
 .aside-nav.collapsed .nav-menu {
@@ -71,19 +89,7 @@
   overflow: hidden;
 }
 
-/* Ícono de hamburguesa para móviles */
-.aside-nav .menu-toggle {
-  display: none;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
   .aside-nav {
     width: 100%;
@@ -92,17 +98,20 @@
   
   .aside-nav.collapsed {
     width: 100%;
-    height: 60px;
+    padding: 1px;
     overflow: hidden;
   }
   
   .aside-nav.collapsed h2 {
     writing-mode: horizontal-tb;
-    padding: 0.5rem 1rem;
-    margin-left: 2.5rem;
+    height: auto;
+    padding: 0.75rem 1rem;
+    margin-left: 0;
+    justify-content: center;
   }
   
-  .aside-nav .menu-toggle {
-    display: block;
+  .aside-nav.collapsed h2::before {
+    display: inline;
+    margin-right: 0.5rem;
   }
 }

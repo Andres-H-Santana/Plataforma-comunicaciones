@@ -1,5 +1,8 @@
-// Reemplaza todo el contenido de app.js con esto:
-import { contenidoDB } from './data.js';
+import { contenidoDB, dataAndres, dataDaniel, dataEstrella, biografias } from './data.js';
+
+// Elementos del DOM
+const content = document.getElementById('content');
+const navItems = document.querySelectorAll('.nav-item');
 
 // Helpers
 const stripHTML = html => {
@@ -27,63 +30,135 @@ const renderFullContent = item => `
     <button class="btn btn-back">← Volver</button>
   </div>`;
 
-// Router
-const routes = {
-  inicio: () => contenidoDB.historias.filter(h => h.destacado).map(h => renderCard(h, 'historias')),
-  historias: () => contenidoDB.historias.map(h => renderCard(h, 'historias')),
-  trabajos: () => contenidoDB.trabajos.map(t => renderCard(t, 'trabajos')),
-  reflexiones: () => contenidoDB.reflexiones.map(r => renderCard(r, 'reflexiones'))
+const renderProfile = (data, profileKey) => {
+  const bio = biografias[profileKey];
+  if (!bio) return '<div>Perfil no encontrado</div>';
+
+  return `
+  <div class="profile-container">
+    <div class="profile-header">
+      <h1>${bio.nombre}</h1>
+      <div class="profile-bio">
+        <p>${bio.bio}</p>
+        <div class="profile-interests">
+          <strong>Intereses:</strong>
+          ${bio.intereses.map(i => `<span class="tag">${i}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+    <div class="profile-content">
+      ${data.trabajos?.length ? `
+      <h2>Trabajos</h2>
+      <div class="grid">
+        ${data.trabajos.map(t => renderCard(t, 'trabajos')).join('')}
+      </div>` : ''}
+      ${data.historias?.length ? `
+      <h2>Historias</h2>
+      <div class="grid">
+        ${data.historias.map(h => renderCard(h, 'historias')).join('')}
+      </div>` : ''}
+      ${data.reflexiones?.length ? `
+      <h2>Reflexiones</h2>
+      <div class="grid">
+        ${data.reflexiones.map(r => renderCard(r, 'reflexiones')).join('')}
+      </div>` : ''}
+    </div>
+  </div>`;
 };
 
-// Init
-document.addEventListener('DOMContentLoaded', () => {
-  const content = document.getElementById('content');
-  const asideNav = document.querySelector('.aside-nav');
+// Router
+const routes = {
+  inicio: () => {
+    const allWorks = [
+      ...(contenidoDB.trabajos || []),
+      ...(contenidoDB.historias?.filter(h => h.destacado) || []),
+      ...(contenidoDB.reflexiones?.filter(r => r.destacado) || [])
+    ];
+    return `
+    <h1>Todos los trabajos</h1>
+    <div class="grid">
+      ${allWorks.map(item => renderCard(item, 
+        item.id >= 100 && item.id < 200 ? 'trabajos' : 
+        item.id >= 200 ? 'reflexiones' : 'historias')).join('')}
+    </div>`;
+  },
+  'sobre-nosotros': () => `
+    <div class="about-container">
+      <h1>Sobre Nosotros</h1>
+      <p class="team-description">Somos un equipo multidisciplinario comprometido con la comunicación efectiva.</p>
+      <div class="team-members">
+        ${Object.entries(biografias).map(([key, member]) => `
+          <div class="team-member">
+            <h2>${member.nombre}</h2>
+            <p>${member.bio}</p>
+            <div class="member-interests">
+              <strong>Intereses:</strong>
+              ${member.intereses.map(i => `<span class="tag">${i}</span>`).join('')}
+            </div>
+            <button class="btn" data-profile="${key}">Ver perfil</button>
+          </div>
+        `).join('')}
+      </div>
+    </div>`,
+  andres: () => renderProfile(dataAndres, 'andres'),
+  daniel: () => renderProfile(dataDaniel, 'daniel'),
+  estrella: () => renderProfile(dataEstrella, 'estrella')
+};
+
+// Navigation
+const handleNavigation = (route) => {
+  if (!routes[route]) return;
   
-  // Toggle menu
+  content.innerHTML = routes[route]();
+  document.querySelectorAll('.nav-item input').forEach(radio => {
+    radio.checked = radio.id === `${route}-check`;
+  });
+};
+
+// Event Listeners
+const initEventListeners = () => {
+  // Menu toggle
   document.querySelector('.aside-nav h2').addEventListener('click', () => {
-    asideNav.classList.toggle('collapsed');
+    document.querySelector('.aside-nav').classList.toggle('collapsed');
   });
 
-  // Navigation
-  const handleNavigation = (radio) => {
-    content.innerHTML = `
-      <h1>${radio.id.replace('-check', '')}</h1>
-      <div class="grid">
-        ${routes[radio.id.replace('-check', '')]().join('')}
-      </div>`;
-  };
-
-  document.querySelectorAll('.nav-item input').forEach(radio => {
-    radio.addEventListener('change', () => {
-      if (radio.checked) {
-        handleNavigation(radio);
-      }
+  // Nav items
+  navItems.forEach(item => {
+    const radio = item.querySelector('input');
+    const label = item.querySelector('label');
+    
+    label.addEventListener('click', () => {
+      radio.checked = true;
+      handleNavigation(radio.id.replace('-check', ''));
     });
   });
 
-  // Improved click handling
+  // Delegated events
   document.addEventListener('click', (e) => {
-    // Handle "Leer más"
-    if (e.target.classList.contains('btn') && !e.target.classList.contains('btn-back')) {
-      const {id, type} = e.target.dataset;
+    // Leer más
+    if (e.target.classList.contains('btn') && e.target.dataset.id) {
+      const { id, type } = e.target.dataset;
       const item = contenidoDB[type].find(item => item.id === parseInt(id));
-      if (item) {
-        content.innerHTML = renderFullContent(item);
-      }
-      return;
+      if (item) content.innerHTML = renderFullContent(item);
     }
     
-    // Handle "Volver"
-    if (e.target.classList.contains('btn-back')) {
+    // Volver
+    else if (e.target.classList.contains('btn-back')) {
       e.preventDefault();
-        const lastChecked = document.querySelector('.nav-item input:checked') || 
-                    document.getElementById('inicio-check');
-        handleNavigation(lastChecked);
-      return;
+      const lastChecked = document.querySelector('.nav-item input:checked') || 
+                         document.getElementById('inicio-check');
+      handleNavigation(lastChecked.id.replace('-check', ''));
+    }
+    
+    // Ver perfil
+    else if (e.target.classList.contains('btn') && e.target.dataset.profile) {
+      handleNavigation(e.target.dataset.profile);
     }
   });
+};
 
-  // Load initial view
-  document.getElementById('inicio-check').click();
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  initEventListeners();
+  handleNavigation('inicio');
 });
