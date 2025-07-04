@@ -125,53 +125,63 @@ export const dataAndres = {
             </div>
 
             <div class="pregunta-respuesta">
-                <p class="pregunta"><strong>1. Escena del padre negando la ceguera de su hijo</strong></p>
-                <p class="respuesta">Respuesta: El gesto de negar con la cabeza es un <strong>emblema</strong> que comunica evasión y vergüenza, sustituyendo verbalmente la verdad sobre la condición de su hijo.</p>
+                <p class="pregunta"><strong>1. Escena en la visita a la familia</strong></p>
+                <p class="respuesta">Respuesta: Cuando el padre niega levemente con la cabeza al ser preguntado si su hijo es ciego, realiza un <strong>emblema</strong> de negación. Este gesto universal comunica mentira o evasión, y refleja su vergüenza por la discapacidad de su hijo.</p>
+                <p>(Luciano Romero)</p>
             </div>
 
             <div class="pregunta-respuesta">
-                <p class="pregunta"><strong>2. Escena del bosque</strong></p>
-                <p class="respuesta">Respuesta: La interacción de Mohammad con el bosque representa un <strong>emblema</strong> de libertad y conexión sensorial, mostrando su forma única de experimentar el mundo.</p>
+                <p class="pregunta"><strong>2. Escena final del rescate</strong></p>
+                <p class="respuesta">Respuesta: Los movimientos del padre al sacar del agua a su hijo, sacudirlo y abrazarlo con fuerza son <strong>ademanes</strong> que revelan su desesperación, amor reprimido y arrepentimiento por no haberlo valorado antes.</p>
+                <p>(Luciano Romero)</p>
             </div>
 
             <div class="pregunta-respuesta">
-                <p class="pregunta"><strong>3. Escena final del rescate</strong></p>
-                <p class="respuesta">Respuesta: Los movimientos del padre al cargar y abrazar a Mohammad son <strong>ademanes</strong> que expresan desesperación, amor reprimido y arrepentimiento.</p>
+                <p class="pregunta"><strong>3. Escena del bosque</strong></p>
+                <p class="respuesta">Respuesta: La interacción de Mohammad con el entorno natural representa un <strong>emblema</strong> de libertad y conexión con la naturaleza. Al explorar el bosque a través del tacto y el oído, demuestra su forma intensa y sensorial de experimentar el mundo.</p>
+                <p>(Isabela Cuartas)</p>
             </div>
 
             <div class="pregunta-respuesta">
                 <p class="pregunta"><strong>4. Escena de la despedida</strong></p>
-                <p class="respuesta">Respuesta: Cuando Mohammad toca el rostro de su abuela, este <strong>ademán</strong> muestra afecto y conexión emocional profunda.</p>
+                <p class="respuesta">Respuesta: Cuando Mohammad se despide tocando el rostro de su abuela o abrazándola, realiza un <strong>ademán</strong> que expresa cariño profundo y conexión emocional. Este gesto resalta el valor del afecto en las relaciones humanas, más allá de su discapacidad.</p>
+                <p>(Isabela Cuartas)</p>
             </div>
 
             <div class="pregunta-respuesta">
-                <p class="pregunta"><strong>5. Escena de enseñanza de texturas</strong></p>
-                <p class="respuesta">Respuesta: El adulto guiando las manos del niño es un <strong>emblema didáctico</strong> que transmite información táctil, mientras el llanto del niño es una respuesta emocional.</p>
+                <p class="pregunta"><strong>5. Escena de la silla de madera</strong></p>
+                <p class="respuesta">Respuesta: La silla que Mohammad construye para su padre actúa como un <strong>emblema</strong> del amor y la dedicación hacia su familia. Su trabajo cuidadoso refleja su deseo de fortalecer el vínculo con él.</p>
+                <p>(Daniel Agudelo)</p>
             </div>
 
             <div class="pregunta-respuesta">
-                <p class="pregunta"><strong>6. Escena del Braille en la escuela</strong></p>
-                <div class="respuesta">
-                    <p>Respuesta:</p>
-                    <ul class="lista-respuestas">
-                        <li>La lectura de Braille por Mohammad es un <strong>emblema</strong> de comunicación no verbal</li>
-                        <li>Las reacciones de asombro de los compañeros son <strong>ilustradores</strong> que acompañan su incredulidad</li>
-                        <li>Los gestos de acercamiento son <strong>reguladores</strong> de la interacción</li>
-                    </ul>
-                </div>
+                <p class="pregunta"><strong>6. Escena en que toca el rostro de su abuela</strong></p>
+                <p class="respuesta">Respuesta: El gesto de Mohammad al tocar el rostro de su abuela es un <strong>ademán</strong> de cariño y reconocimiento. Refleja la intimidad, el afecto y la confianza profunda en su relación con ella.</p>
+                <p>(Daniel Agudelo)</p>
+            </div>
+
+            <div class="pregunta-respuesta">
+                <p class="pregunta"><strong>7. Escena de enseñanza de texturas</strong></p>
+                <p class="respuesta">Respuesta: La acción del adulto al guiar las manos del niño para identificar diferentes texturas de la madera es un <strong>emblema</strong> didáctico. Este gesto transmite conocimiento de forma intencional y simbólica a través del tacto.</p>
+                <p>(Andrés Hurtado)</p>
+            </div>
+
+            <div class="pregunta-respuesta">
+                <p class="pregunta"><strong>8. Escena del Braille en la escuela</strong></p>
+                <p class="respuesta">Respuesta: El momento en que el niño ciego lee Braille mientras sus compañeros observan con asombro representa un <strong>emblema</strong> de comunicación no verbal, que demuestra sus habilidades y genera admiración en los demás.</p>
+                <p>(Andrés Hurtado)</p>
             </div>`,
             tags: ["comunicación", "no verbal", "educación", "cine"]
         }
-        
     ],
     reflexiones: [
         {
             id: 201,
-            titulo: "Sobre la creatividad",
-            contenido: "La creatividad no es un don reservado para unos pocos, sino una habilidad que todos podemos desarrollar. Se nutre de la curiosidad, la observación y la capacidad de conectar ideas aparentemente desconectadas. Los momentos de mayor inspiración suelen llegar cuando menos los esperamos: en la ducha, durante un paseo o justo antes de dormir. Es importante crear espacios en nuestra rutina que permitan a la mente divagar y explorar nuevas posibilidades.",
+            titulo: "Más allá de la comunicación",
+            contenido: "A veces siento que mis dificultades para comunicarme tienen raíces más profundas de lo que imaginaba. Crecí en un entorno donde expresarme no solo era difícil, sino casi un acto de valentía. Hablar sobre lo que sentía, lo que pensaba, era muchas veces malinterpretado o simplemente ignorado. Con el tiempo, aprendí a callar. A observar más de lo que decía. Y eso, sin darme cuenta, me moldeó.\n\nAhora, ya de adulto, me doy cuenta de que esa forma de protegerme se convirtió en una barrera. Aunque he trabajado en ello y he mejorado mucho, aún me cuesta expresar lo que me incomoda o lo que necesito. No porque no lo sienta, sino porque me cuesta ponerle palabras. A veces, incluso, me descubro agotado después de interactuar con otras personas. Como si cada conversación me quitara más energía de la que me da.\n\nNo creo que deba obligarme a encajar en formas de socializar que no van conmigo. Pero cuando intento acercarme a los demás, me doy cuenta de lo torpe que me he vuelto para entender, para escuchar con empatía, para mantener una conversación que fluya sin miedo o rigidez.\n\nSin embargo, creo que todo esto también me ha ayudado en algo: siento que soy una persona que sabe escuchar, que comprende a los demás desde un lugar sincero. Tal vez precisamente porque me cuesta tanto hablar de mí mismo, soy más sensible a lo que otros sienten. Para mí, esto no es un conflicto con nadie en particular, sino conmigo mismo. Hay algo en mí que no quiere ser realmente conocido, como si guardar cierta distancia fuera una forma de protección.\n\nEs curioso estar escribiendo esto. Porque justo al ponerlo en palabras, empiezo a conocerme un poco mejor. Es una forma de mirarme sin filtros, de dialogar conmigo mismo. Tal vez eso sea lo más valioso de todo este proceso: no buscar la perfección en mi manera de comunicarme, sino la honestidad con la que intento entenderme.",
             autor: "Andres",
             fecha: "2025",
-            tags: ["creatividad", "inspiración", "proceso creativo", "arte"]
+            tags: ["autoexploración", "comunicación", "reflexión personal", "crecimiento"]
         }
     ]
 };

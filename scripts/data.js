@@ -5,14 +5,14 @@ import { dataEstrella } from './dataEstrella.js';
 const biografias = {
   andres: {
     nombre: "Andrés Santana",
-    bio: "Curioso por naturaleza, con gran interés en el emprendimiento, la tecnología y la expresión auténtica. Hábil en conversaciones cotidianas con un tono reflexivo, siempre en busca de crecimiento personal y profesional. Amante de los animales, los dulces, las salidas nocturnas y el tiempo de calidad. Deportista y bailarín de breaking.",
-    intereses: ["tecnología", "crecimiento personal", "animales", "breaking", "tiempo de calidad"]
+    bio: "Curioso por naturaleza, con un interés constante en el crecimiento personal, la autenticidad y la exploración interior. Apasionado por la tecnología, el emprendimiento y las distintas formas en que las personas se expresan con profundidad y honestidad. Disfruto tanto de las conversaciones cotidianas como del silencio, valorando los espacios con grandes vistas. Aprecio los vínculos genuinos, el tiempo de calidad, los sabores simples y la conexión con los animales. Deportista y bailarín de breaking.",
+    intereses: ["tecnología", "autenticidad", "expresión", "animales", "breaking", "tiempo de calidad"]
   },
   daniel: {
       nombre: "Daniel Agudelo",
       edad: 30,
-      bio: "Me gustan los gatos, los tucanes y las plantas. Disfruto una buena conversación y mi bebida favorita es el café. Vivo con mis padres y mi hermana. Tengo experiencia en seguridad privada, carnicería y actualmente estudio desarrollo de software mientras trabajo como panadero.",
-      intereses: ["gatos", "aves", "plantas", "café", "programación", "panadería"]
+      bio: "Me gustan los gatos y las plantas. Disfruto una buena conversación y mi bebida favorita es el café. Vivo con mis padres y mi hermana. Tengo experiencia en seguridad privada, carnicería y actualmente estudio desarrollo de software mientras trabajo como panadero.",
+      intereses: ["gatos", "plantas", "café", "programación"]
   },
   estrella: {
     nombre: "Nicole Estrella",
@@ -45,9 +45,7 @@ const contenidoDB = {
     ...(dataAndres.trabajos || []),
     ...(dataDaniel.trabajos || []),
     ...(dataEstrella.trabajos || [])
-  ].filter((trabajo, index, self) => 
-    index === self.findIndex(t => t.id === trabajo.id)
-  ).map(validarItem),
+  ].map(validarItem),
   
   reflexiones: [
     ...(dataAndres.reflexiones || []),

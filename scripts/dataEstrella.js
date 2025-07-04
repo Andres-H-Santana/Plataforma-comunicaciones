@@ -13,7 +13,7 @@ export const dataEstrella = {
 
     trabajos: [
         {
-            id: 105,
+            id: 104,
             titulo: "LA KINESIS: ANÁLISIS DEL LENGUAJE CORPORAL",
             descripcion: "Estudio sobre la comunicación no verbal a través de movimientos corporales y su aplicación práctica",
             equipo: "Nicole Ospina, Juan José Hernandez, Camila Ceballos",
@@ -94,7 +94,7 @@ export const dataEstrella = {
             tags: ["kinesis", "comunicación no verbal", "lenguaje corporal", "análisis fílmico", "psicología"]
         },
         {
-            id: 106,
+            id: 105,
             titulo: "TALLER DE COMUNICACIÓN ASERTIVA",
             descripcion: "IDENTIFICACIÓN DE LOS TIPOS DE COMUNICACIÓN EN LA COMUNICACIÓN ASERTIVA",
             equipo: "Lucianno Romero, Nicole Ospina",
@@ -178,73 +178,16 @@ export const dataEstrella = {
                 </ul>
             </div>`,
             tags: ["comunicación", "asertividad", "habilidades sociales", "educación"]
-        },
-        {
-            id: 107,
-            titulo: "FUNCIÓN DEL LENGUAJE EMOTIVA",
-            descripcion: "ANÁLISIS DE LA FUNCIÓN EMOTIVA DEL LENGUAJE Y SUS CARACTERÍSTICAS",
-            equipo: "Camila Ceballos, Juan José Hernández, Nicole Ospina",
-            año: "2025",
-            contenido: `
-                <div class="concepto-definicion">
-                    <h3>Función emotiva del lenguaje</h3>
-                    <p>La función emotiva del lenguaje manifiesta emociones y estados de ánimo del emisor, centrándose en la expresión subjetiva de sus sentimientos.</p>
-                </div>
-
-                <div class="pregunta-respuesta">
-                    <p class="pregunta"><strong>¿En qué se enfoca principalmente la función emotiva?</strong></p>
-                    <p class="respuesta">Respuesta: Se enfoca en el <strong>emisor</strong> del mensaje y en la expresión de su mundo interior.</p>
-                </div>
-
-                <div class="pregunta-respuesta">
-                    <p class="pregunta"><strong>Características principales</strong></p>
-                    <div class="respuesta">
-                        <ul class="lista-caracteristicas">
-                            <li>Utiliza lenguaje subjetivo</li>
-                            <li>Expresa opiniones personales</li>
-                            <li>Incluye emociones y sentimientos</li>
-                            <li>Emplea signos de exclamación</li>
-                            <li>Usa recursos como interjecciones y metáforas</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="seccion-especial">
-                    <h3>Ejemplos de función emotiva</h3>
-                    <div class="pregunta-respuesta">
-                        <div class="respuesta">
-                            <ul class="lista-ejemplos">
-                                <li>"¡Estoy tan feliz hoy!"</li>
-                                <li>"No soporto esta situación..."</li>
-                                <li>"Qué hermoso atardecer..."</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reflexion">
-                    <h3>Reflexión final</h3>
-                    <p>"Comunicar también es sentir. ¡Exprésate con emoción!"</p>
-                </div>
-
-                <div class="referencias">
-                    <h3>Datos del trabajo</h3>
-                    <ul>
-                        <li><strong>Número de Ficha:</strong> 3062785</li>
-                        <li><strong>Competencia:</strong> Desarrollo de procesos comunicativos efectivos</li>
-                    </ul>
-                </div>`,
-            tags: ["lenguaje", "función emotiva", "comunicación", "educación"]
         }
     ],
     reflexiones: [
         {
-            id: 202,
-            titulo: "El poder de la comunicación asertiva",
-            contenido: "La comunicación asertiva es la clave para expresar lo que sentimos y pensamos sin herir ni callarnos. Es el equilibrio entre hablar con respeto y defender lo que somos. Cuando somos asertivos, construimos relaciones más sanas y auténticas, porque aprendemos a escucharnos y a escuchar a los demás desde la empatía.",
-            autor: "Estrella",
-            fecha: "2025",
-            tags: ["comunicación", "relaciones", "empatía", "crecimiento personal"]
+        id: 202,
+        titulo: "Reflexión: \"Alejarse también es cuidarse\"",
+        contenido: "A veces, el amor no basta para sostener una relación cuando lo que recibimos son heridas disfrazadas de afecto. Con mi abuela materna he aprendido que no toda la familia te cuida, y que a veces quienes deberían protegerte, terminan haciéndote daño. Alejarme de ella no es por falta de cariño, sino por necesidad de paz. Decidí romper el ciclo de confusión y dolor, entendiendo que cuidar mi bienestar también es un acto de amor propio. No siempre es fácil, pero sí es lo justo conmigo misma.",
+        autor: "Estrella",
+        fecha: "2025",
+        tags: ["comunicación", "relaciones", "empatía", "crecimiento personal"]
         }
     ]
 }

@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plataforma de Contenidos</title>
+  <title>Con lo Justo - Plataforma de Contenidos</title>
+  <meta name="description" content="Una plataforma educativa con contenidos reflexivos, creativos y personales sobre comunicación.">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/aside.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/diapositivas.css">
 </head>
 <body>
   <div class="app-container">
-    <aside class="aside-nav">
-      <h2>Menú</h2>
-      <ul class="nav-menu">
+    <aside class="aside-nav" role="navigation" aria-label="Menú principal">
+      <h2>Con lo Justo</h2>
+      <ul class="nav-menu" role="radiogroup" aria-label="Navegación de secciones">
         <li class="nav-item">
           <input type="radio" id="inicio-check" name="nav-menu" checked>
           <label for="inicio-check">Inicio</label>
@@ -23,8 +26,9 @@
         </li>
         <li class="nav-item">
           <input type="radio" id="andres-check" name="nav-menu">
-          <label for="andres-check">Andrés</label></li>
-                  <li class="nav-item">
+          <label for="andres-check">Andrés</label>
+        </li>
+        <li class="nav-item">
           <input type="radio" id="daniel-check" name="nav-menu">
           <label for="daniel-check">Daniel</label>
         </li>
@@ -35,11 +39,12 @@
       </ul>
     </aside>
 
-    <main class="main-content" id="content">
+    <main class="main-content" id="content" role="main">
       <!-- Contenido dinámico -->
     </main>
   </div>
 
   <script type="module" src="scripts/app.js"></script>
+    <script src="scripts/diapositivas.js"></script>
 </body>
 </html>

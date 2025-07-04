@@ -2,39 +2,6 @@ export const dataDaniel = {
     trabajos: [
         {
             id: 103,
-            titulo: "LA FUNCIÓN METALINGÜÍSTICA",
-            descripcion: "Es cuando usamos el lenguaje para hablar sobre el propio lenguaje. Por ejemplo, cuando definimos una palabra, explicamos una regla gramatical o corregimos cómo se dice algo.",
-            equipo: "Juan Daniel Agudelo, Andrés Felipe Hurtado, Lhucianno Romero",
-            año: "2025",
-            contenido: `<div class="pregunta-respuesta">
-                    <p class="pregunta"><strong>¿Para qué sirve?</strong></p>
-                    <p class="respuesta">
-                        La usamos para hablar sobre el lenguaje mismo. Es útil cuando queremos definir palabras, corregir errores lingüísticos o explicar reglas gramaticales. Esta función permite:
-                    </p>
-                    <div class="respuesta">
-                        <ul class="lista-caracteristicas">
-                            <li>Enseñar o aprender un idioma</li>
-                            <li>Corregir errores</li>
-                            <li>Aclarar significados</li>
-                            <li>Hablar sobre normas del lenguaje</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pregunta-respuesta">
-                    <p class="pregunta"><strong>Ejemplos</strong></p>
-                    <div class="respuesta">
-                        <ul class="lista-caracteristicas">
-                            <li>‘Perro’ es un sustantivo.</li>
-                            <li>“El plural de lápiz es lápices.”</li>
-                            <li>¿Qué significa ‘Ética’?</li>
-                            <li>El verbo ‘Comer’ está en infinitivo.</li>
-                        </ul>
-                    </div>
-                </div>`,
-            tags: ["lingüística", "gramática", "educación", "comunicación"]
-        },
-        {
-            id: 104,
             titulo: "TALLER DE COMUNICACIÓN ASERTIVA",
             descripcion: "IDENTIFICAR LOS TIPOS DE COMUNICACIÓN EN LA COMUNICACIÓN ASERTIVA",
             equipo: "Juan José Hernández, Juan Daniel Agudelo",
@@ -80,10 +47,10 @@ export const dataDaniel = {
         {
             id: 202,
             titulo: "La comunicación",
-            contenido: "comunicar no es solo transmitir información, sino construir puentes de entendimiento y vínculo humano. La comunicación deja de ser un simple intercambio de datos y se convierte en un arte donde cada gesto, cada palabra y cada intención confluyen para acercarnos, comprendernos y crecer juntos.",
+            contenido: "Durante la competencia de Comunicaciones aprendí que una comunicación amena y asertiva es indispensable para construir un buen puente con los demás. En este trimestre, identifiqué que muchas veces, al comunicarme con mi hermana, usaba un lenguaje pasivo-agresivo, lo cual dificultaba mucho nuestra relación. A partir de este reconocimiento, comencé a trabajar en ello y logré mejorar notablemente. Hoy en día, puedo sentarme a conversar con ella sin que alguno de los dos termine molesto. Cuando, como persona, aprendí a ver mis errores al momento de comunicarme, entendí que esa forma de actuar había alejado a grandes personas de mi vida. Desde entonces, he comenzado un proceso de cambio, más consciente y respetuoso, para mejorar mis relaciones y mi manera de expresarme.",
             autor: "Daniel",
             fecha: "2025/06/30",
-            tags: ["bienestar", "reflexión"]
+            tags: ["bienestar", "reflexión", "comunicación", "crecimiento personal"]
         }
     ]
 };
